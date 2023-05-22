@@ -60,3 +60,22 @@ class Address(Base):
 
 ## Draw from SQLAlchemy base
 render_er(Base, 'diagram.png')
+
+
+##class Personaje(Base):
+##    __tablename__ = 'personaje'
+##    id = Column(Integer, primary_key=True)
+##    name = Column(String(50), nullable=False)  
+##    descripcion = Column(String(150), nullable=False)
+##
+##class Favorito(Base):
+##    __tablename__ = 'favorito'
+##    id = Column(Integer, primary_key=True)
+##    personaje_id = Column(Integer, ForeignKey('personaje.id'), nullable=True)  
+##    planeta_id = Column(Integer, ForeignKey('planeta.id'), nullable=True)
+##    personaje = relationship(Personaje)
+##    planeta = relationship(Planeta)
+##    user =  relationship(Usuario)
+##    user_id =  Column(Integer, ForeignKey("usuario.id"))
+##
+##
